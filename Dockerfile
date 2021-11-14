@@ -10,7 +10,7 @@ USER node
 
 RUN mkdir .git
 
-RUN git init
+COPY .env  ./
 
 RUN yarn install --pure-lockfile
 
