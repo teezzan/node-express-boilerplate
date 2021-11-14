@@ -8,8 +8,6 @@ COPY package.json yarn.lock ./
 
 USER node
 
-RUN mkdir .git
-
 COPY .env  ./
 
 RUN yarn install --pure-lockfile
