@@ -8,8 +8,6 @@ COPY package.json yarn.lock ./
 
 USER node
 
-COPY .env  ./
-
 RUN yarn install --pure-lockfile
 
 COPY --chown=node:node . .
